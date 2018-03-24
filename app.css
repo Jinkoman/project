@@ -151,9 +151,10 @@ html {  font-family: sans-serif; /*text style*/
     font-size: 23px;
 }
 
-select {
+/*select {
     display: block;
-}
+}*/
+
 
 body {
     background-color: #0d47a1;
@@ -169,9 +170,9 @@ body {
 
 .item {
     border: 5px solid white;
-    margin: 10px;
+    margin: 50px;
     border-radius: 20px;
-    padding: 15px;
+    padding: 50px;
     color: #dddddd;
     height: inherit;
 }
