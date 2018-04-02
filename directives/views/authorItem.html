@@ -1,8 +1,10 @@
-<div class="item">
-    <h5 ng-click="modalOpen">{{author.name}} {{author.sname}}</h5>
-    <h6 ng-if="author.date">Date: {{author.date}}</h6>
-    <h6>ID:{{author.id}}</h6>
-    <div class="itemcnt fleft">
+<div class="item author">
+    <div>
+        <h5 ng-click="modalOpen">{{author.name}} {{author.sname}}</h5>
+        <h6 ng-if="author.date">Date: {{author.date}}</h6>
+        <h6>ID:{{author.id}}</h6>
+    </div>
+    <div>
         <ul>
             <li ng-repeat="sbook in subBooks">
                 <h5 class="fleft">{{sbook.name}}</h5>
@@ -18,7 +20,7 @@
             <button class="btn light-blue" ng-click="subscribeBook()">Add exist book</button>
         </p>
     </div>
-    <div class="controlbtn fright">
+    <div>
         <button class="btn light-blue fright" ng-click="openEditModal()">EDIT</button>
         <button class="btn red fright" ng-click="openDeleteModal()">DELETE</button>
     </div>

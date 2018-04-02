@@ -11,7 +11,8 @@ angular
             },
             bindController: true,
             templateUrl: 'directives/views/authorItem.html',
-            controller: function ($scope, $rootScope, dataService, $timeout) {
+            controller: function ($scope, $rootScope, dataService, $timeout, $window) {
+                $scope.author.date = $window.moment($scope.author.date).format('DD-MM-YYYY');
                 $scope.openEditModal = function () {
                     $rootScope.$broadcast('OPEN_MODAL', {
                         dialogType: 'EDIT',
