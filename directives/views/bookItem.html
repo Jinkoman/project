@@ -1,9 +1,12 @@
+<div class="bookstyle">
 <div ng-if="book">
+
     <h5 ng-click="modalOpen">{{book.name}}(ID:{{book.id}})</h5>
     <h6 ng-if="book.style && book.style !== 'NONE'">Style: {{book.style}}</h6>
-    <dvi>
+    <div class="booknewstyle">
         <button ng-click="openEditModal()">EDIT</button>
         <button ng-click="delete()">DELETE</button>
         <button ng-if="book.authorId" ui-sref="authors.edit({authorId:book.authorId})">Edit Author</button>
-    </dvi>
+    </div>
+ </div>
 </div>
